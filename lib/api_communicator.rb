@@ -16,9 +16,13 @@ def parse_character_movies(films_hash)
   films_hash.each {|movie| puts movie["title"]}
 end
 
+
 def show_character_movies(character)
   films_hash = get_character_movies_from_api(character)
   parse_character_movies(films_hash)
 end
 
+## BONUS
 
+# that `get_character_movies_from_api` method is probably pretty long. Does it do more than one job?
+# can you split it up into helper methods?
